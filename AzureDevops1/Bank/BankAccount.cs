@@ -58,6 +58,16 @@ namespace BankAccountNS
             m_balance += amount;
         }
 
+        public void Credit2(double amount)
+        {
+            if (amount < 0)
+            {
+                throw new ArgumentOutOfRangeException("amount");
+            }
+
+            m_balance += amount;
+        }
+
         public static void Main()
         {
             BankAccount ba = new BankAccount("vidapogosoft", 40.99);
