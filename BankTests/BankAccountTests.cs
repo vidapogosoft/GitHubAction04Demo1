@@ -11,6 +11,7 @@ namespace BankTests
         public void Debit_WithValidAmount_UpdatesBalance()
         {
             // Arrange
+             double beginningBalance2 = 11.99;
             double beginningBalance = 11.99;
             double debitAmount = 4.55;
             double expected = 16.54; //7.44;
